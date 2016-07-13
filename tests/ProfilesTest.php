@@ -5,7 +5,7 @@ class ProfilesTest extends PHPUnit_Framework_TestCase
     {
         $di = Xhgui_ServiceContainer::instance();
         $this->profiles = $di['profiles'];
-        loadFixture($this->profiles, 'tests/fixtures/results.json');
+        loadFixture($this->profiles, __DIR__ . '/fixtures/results.json');
     }
 
     public function testPagination()

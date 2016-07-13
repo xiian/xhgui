@@ -4,7 +4,7 @@ class Saver_FileTest extends PHPUnit_Framework_TestCase
 {
     public function testSave()
     {
-        $data = file_get_contents('tests/fixtures/results.json');
+        $data = file_get_contents(__DIR__ . '/../fixtures/results.json');
         
         $file = tempnam(sys_get_temp_dir(), "xhgui");
         

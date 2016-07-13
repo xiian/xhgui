@@ -4,7 +4,7 @@ class Saver_MongoTest extends PHPunit_Framework_TestCase
 {
     public function testSave()
     {
-        $data = file_get_contents('tests/fixtures/results.json');
+        $data = file_get_contents(__DIR__ . '/../fixtures/results.json');
 
         $profiles = $this->getMockBuilder('Xhgui_Profiles')
             ->disableOriginalConstructor()
